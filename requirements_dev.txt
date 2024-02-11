@@ -1,4 +1,5 @@
 pandas
+pickle
 ipykernel
 scikit-learn
 pathlib

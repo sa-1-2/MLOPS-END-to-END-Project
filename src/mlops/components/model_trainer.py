@@ -5,7 +5,6 @@ from mlops.exception.exception import customexception
 import os
 import sys
 from dataclasses import dataclass
-from pathlib import Path
 
 from xgboost import XGBRegressor
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, ElasticNet

@@ -70,9 +70,3 @@ class DataIngestion:
         except Exception as e:
             logging.exception("An error occurred during data ingestion:")
             raise customexception(e, sys)
-        
-if __name__ == "__main__":
-    obj = DataIngestion()
-    obj.download_file()
-    obj.extract_zip_file()
-    obj.initiate_data_ingestion()

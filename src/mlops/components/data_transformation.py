@@ -129,8 +129,3 @@ class DataTransformation:
             logging.info("Exception occured in the initiate_datatransformation")
 
             raise customexception(e,sys)
-
-if __name__ == "__main__":
-    obj = DataTransformation()
-    obj.initialize_data_transformation()
-    

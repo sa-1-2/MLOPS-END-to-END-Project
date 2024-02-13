@@ -6,6 +6,7 @@ import pandas as pd
 from mlops.components.data_ingestion import DataIngestion
 from mlops.components.data_transformation import DataTransformation
 from mlops.components.model_trainer import ModelTrainer
+from mlops.components.model_evaluation import ModelEvaluation
 
 logging.info("Data Ingestion started")
 data_ingest = DataIngestion()
@@ -23,3 +24,7 @@ logging.info("Model Training Started")
 model_trainer = ModelTrainer()
 model_trainer.initiate_model_trainer(train_array=train_arr, val_array=val_arr)
 logging.info("Model Training Finished")
+logging.info("Model Evaluation Started")
+model_evaluation = ModelEvaluation()
+model_evaluation.initiate_model_evaluation(val_arr)
+logging.info("Model Evaluation Competed")
